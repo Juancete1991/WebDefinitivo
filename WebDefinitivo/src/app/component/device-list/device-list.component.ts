@@ -17,13 +17,13 @@ export class DeviceListComponent {
   device = new Device()
   data = new Data()
 
-  @Input() name: string
-  @Input() price: number
-  @Input() color: string
-  @Input() id2: string
-  @Input() name2: string
-  @Input() price2: number
-  @Input() color2: string
+  @Input() name: string = ''
+  @Input() price: number = 0
+  @Input() color: string = ''
+  @Input() id2: string = ''
+  @Input() name2: string = ''
+  @Input() price2: number = 0
+  @Input() color2: string = ''
   @ViewChild('see') see: any
 
   constructor(private deviceService: DeviceService, private modalService: NgbModal) { }
