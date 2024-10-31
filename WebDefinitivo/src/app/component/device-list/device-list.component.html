@@ -1,0 +1,37 @@
+<table>
+    <thead>
+        <tr>
+            <th style="text-align: left">ID</th>
+            <th style="text-align: left">NAME</th>
+            <th style="text-align: left">PRICE</th>
+            <th style="text-align: left">COLOR</th>
+            <th colspan="2"></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let device of deviceList" id="{{device.id}}">
+            <td *ngIf="device.data != null && hasProp(device.data, 'price') && hasProp(device.data, 'color')">
+                {{device.id}}</td>
+            <td *ngIf="device.data != null && hasProp(device.data, 'price') && hasProp(device.data, 'color')">
+                {{device.name}}</td>
+            <td *ngIf="device.data != null && hasProp(device.data, 'price') && hasProp(device.data, 'color')">
+                {{device.data.price}}</td>
+            <td *ngIf="device.data != null && hasProp(device.data, 'price') && hasProp(device.data, 'color')">
+                {{device.data.color}}</td>
+            <td *ngIf="device.data != null && hasProp(device.data, 'price') && hasProp(device.data, 'color')"></td>
+            <td *ngIf="device.data != null && hasProp(device.data, 'price') && hasProp(device.data, 'color')"></td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+
+        <tr>
+            <td></td>
+            <td><input [(ngModel)]="name" placeholder="NAME"></td>
+            <td><input [(ngModel)]="price" placeholder="PRICE"></td>
+            <td><input [(ngModel)]="color" placeholder="COLOR"></td>
+            <td colspan="2" style="text-align: center"><button (click)="save()">ADD</button></td>
+        </tr>
+
+    </tfoot>
+</table>
