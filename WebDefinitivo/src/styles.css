@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+html{
+
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6PqyMT2G68r_G294RTk6_3baKyji7Ki5Ydw&s");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+        height: 100%; /* Permite que la página se expanda */
+        overflow: auto;
+}

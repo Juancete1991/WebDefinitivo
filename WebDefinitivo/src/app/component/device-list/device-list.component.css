@@ -1,0 +1,140 @@
+/* Estilo de la tabla */
+table {
+    
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #e8f0fe;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 3px solid purple;
+    margin : 0 0 1em 0;
+    caption-side: top;
+}
+
+th,
+td {
+    
+    /* border: 1px solid #d3d3d3; */
+    padding: 10px;
+    text-align: left;
+    width: 30%;
+    padding: 0.3em;
+}
+
+th {
+    font-family: "Rock Salt", cursive;
+   background-color: #b4c9ee;
+    color: #2b2d42;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #e8f0fe;
+}
+
+tr:hover {
+    background-color: #d3e4f0;
+}
+
+/* Estilo de las entradas de formulario */
+input[type="text"],
+input[type="number"] {
+    padding: 8px;
+    margin: 4px 0;
+    border: 1px solid #a29bfe;
+    border-radius: 4px;
+    outline: none;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #6c5ce7;
+    box-shadow: 0 0 5px rgba(108, 92, 231, 0.5);
+}
+
+/* Estilo del botón */
+button {
+    background-color: #6a89cc;
+    color: #ffffff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+tbody th, tfoot th {
+   border: 0;
+}
+
+button:hover {
+    background-color: #4a69bd;
+}
+
+.modal-body {
+    background-color: #6a89cc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.modal-header {
+    background-color: #edcde9df;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.modal-title {
+    margin: 0;
+}
+
+.modal-body label {
+    margin-top: 3px;
+    display: block;
+    color: #2d3436;
+    font-weight: bold;
+}
+
+input.form-control {
+    width: 100%;
+    padding: 8px;
+    margin: 4px 0 12px;
+    border: 1px solid #81ecec;
+    border-radius: 4px;
+}
+
+.modal-footer {
+    text-align: right;
+    background-color: #99c2ef;
+    padding: 10px;
+}
+
+.btn-primary {
+    background-color: #4d9b85;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    color: #2d3436;
+    text-shadow: #2b2d42;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #00cec9;
+    
+}
+
+.close {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #e17055;
+}

@@ -26,7 +26,7 @@ export class DeviceListComponent {
   @Input() color2: string = ''
   @ViewChild('see') see: any
 
-  constructor(private deviceService: DeviceService, private modalService: NgbModal) { }
+  constructor(private deviceService: DeviceService, private modalService: NgbModal) { } 
   
   hasProp(o: Data, name: string) {
     return o.hasOwnProperty(name)
@@ -39,7 +39,7 @@ export class DeviceListComponent {
   getAll() {
     this.deviceService.getAll().subscribe(response => {
       this.deviceList = response
-      this.clearInputs()
+      //this.clearInputs()
     }, error => {
       console.log(error)
     })
@@ -51,6 +51,8 @@ export class DeviceListComponent {
     this.data.color = this.color
     this.device.data = this.data
     this.deviceService.save(this.device).subscribe((response) => {
+      //this.getAll(); //
+      //this.clearInputs() //
       this.insertTr(response)
     }, error => {
       console.log(error)
@@ -93,6 +95,7 @@ export class DeviceListComponent {
     this.deviceService.delete(id).subscribe(() => {
       document.getElementById(id)?.remove()
       this.clearInputs()
+      //this.getAll() //
     })
   }
 
@@ -110,6 +113,7 @@ export class DeviceListComponent {
       this.deviceService.update(this.device).subscribe((response) => {
         document.getElementById(response.id)?.remove()
         this.insertTr(response)
+        //this.getAll() //
       }, error => {
         console.log(error)
       })
