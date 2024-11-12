@@ -10,16 +10,15 @@
     </thead>
     <tbody>
         <tr *ngFor="let device of deviceList" id="{{device.id}}">
-            <td *ngIf="device.data != null">
+            <td>
                 {{device.id}}</td>
-            <td *ngIf="device.data != null">
+            <td>
                 {{device.name}}</td>
             <td *ngIf="device.data != null && hasProp(device.data, 'price') ">
                 {{device.data.price}}</td>
-            <td *ngIf="device.data != null && hasProp(device.data, 'price') && hasProp(device.data, 'color')">
+            <td *ngIf="device.data != null && hasProp(device.data, 'color')">
                 {{device.data.color}}</td>
-            <td *ngIf="device.data != null && hasProp(device.data, 'price')"></td>
-            <td *ngIf="device.data != null && hasProp(device.data, 'price')"></td>
+           
         </tr>
     </tbody>
 
